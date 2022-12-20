@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formular</title>
+  </head>
+  <body>
+    <h1>Formular de angajare în domeniul IT</h1>
+    <form>
+      <div>
+        <label for="nume">Nume:</label>
+        <input type="text" id="nume" name="nume" />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="prenume">Prenume:</label>
+        <input type="text" id="prenume" name="prenume" />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="age">Vârsta:</label>
+        <input type="number" id="age" name="age" min="18" max="60" />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="age">Data nașterii:</label>
+        <input type="date" id="date" name="date" />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="pin">CNP:</label><br />
+        <input type="text" id="pin" name="pin" maxlength="13" size="13" />
+      </div>
+
+      <br />
+
+      <div>
+        Gen:
+        <input type="radio" id="gen_feminin" name="gen" value="feminin" />
+        <label for="gen_feminin">Feminin</label>
+        <input type="radio" id="gen_masculin" name="gen" value="masculin" />
+        <label for="gen_masculin">Masculin</label>
+      </div>
+
+      <br />
+
+      <div>
+        <label for="nume">Naționalitate:</label>
+        <input type="text" id="nume" name="nume" />
+      </div>
+
+      <br />
+
+      <fieldset style="width: 700px; height: 70px">
+        <legend>Adresa</legend>
+        <input type="text" name="strada" placeholder="Strada" />
+        <input type="number" name="nr" min="1" placeholder="Nr." />
+        <input type="text" name="bloc" placeholder="Bloc" />
+        <input type="text" name="ap" placeholder="Ap." />
+        <select name="jud" id="jud">
+          <option value="">Selectați județul</option>
+          <option value="BH">Bihor</option>
+          <option value="CJ">Cluj-Napoca</option>
+          <option value="IF">Ilfov</option>
+          <option value="BV">Brașov</option>
+          <option value="CT">Constanța</option>
+        </select>
+
+        <input
+          type="text"
+          name="oraș"
+          id="oraș"
+          placeholder="Oraș"
+          list="orașe"
+        />
+        <datalist id="orașe">
+          <option value="Oradea"></option>
+          <option value="Cluj-Napoca"></option>
+          <option value="București"></option>
+          <option value="Brașov"></option>
+          <option value="Constanța"></option>
+          <option value="Arad"></option>
+          <option value="Deva"></option>
+        </datalist>
+      </fieldset>
+
+      <br />
+
+      <div>
+        <fieldset style="width: 400px; height: 80px">
+          <legend>Date de contact:</legend>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" /><br /><br />
+          <label for="phone">Telefon:</label>
+          <input type="tel" id="phone" name="phone" />
+        </fieldset>
+      </div>
+
+      <br />
+
+      <div>
+        <label for="studi">Educație:</label>
+        <select name="studi" id="studi">
+          <option value="">Selectați tipul de învățământ</option>
+          <optgroup label="Studii medii:">
+            <option value="postliceal">Învățământ secundar superior</option>
+            <option value="nonuniversitar">Învățământ post-liceal</option>
+          </optgroup>
+          <optgroup label="Studii superioare:">
+            <option value="licenta">Studii universitare de licenta</option>
+            <option value="master">Studii universitare de master</option>
+            <option value="doctorat">Studii universitare de doctorat</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <br />
+
+      <div>
+        Tipuri de limbi străini cunoscute și nivelul de cunoastere al acestora:
+        <ol>
+          <li>Engleză</li>
+          <input type="checkbox" id="limba" name="limba" value="incepator" />
+          <label for="limba">începător</label
+          ><br />
+          <input type="checkbox" id="limba" name="limba" value="intermadiar" />
+          <label for="limba">intermediar</label
+          ><br />
+          <input type="checkbox" id="limba" name="limba" value="avansat" />
+          <label for="limba">avansat</label
+          ><br />
+          <li>Germană</li>
+          <input type="checkbox" id="limba" name="limba" value="incepator" />
+          <label for="limba">începător</label
+          ><br />
+          <input type="checkbox" id="limba" name="limba" value="intermadiar" />
+          <label for="limba">intermediar</label
+          ><br />
+          <input type="checkbox" id="limba" name="limba" value="avansat" />
+          <label for="limba">avansat</label
+          ><br />
+          <li>Altele</li>
+          <input type="text" />
+        </ol>
+      </div>
+
+      <br />
+
+      <div>
+        Ce fel de tipuri de limbaja de programare cunoasteți?<br />
+        <input type="checkbox" id="limbaje" name="limbaje" value="Pascal" />
+        <label for="limba">Pascal</label><br />
+        <input type="checkbox" id="limbaje" name="limbaje" value="C/C++" />
+        <label for="limba">C/C++</label><br />
+        <input type="checkbox" id="limbaje" name="limbaje" value="C#" />
+        <label for="limba">C#</label><br />
+        <input type="checkbox" id="limbaje" name="limbaje" value="Java" />
+        <label for="limba">Java</label><br />
+        <input type="checkbox" id="limbaje" name="limbaje" value="HTML5" />
+        <label for="limba">HTML5</label><br />
+        <input type="checkbox" id="limbaje" name="limbaje" value="CSS3" />
+        <label for="limba">CSS3</label><br />
+        <input type="checkbox" id="limbaje" name="limbaje" value="JavaScript" />
+        <label for="limba">JavaScript</label><br />
+        <input type="checkbox" id="limbaje" name="limbaje" value="PHP" />
+        <label for="limba">PHP</label><br />
+        <input type="checkbox" id="limbaje" name="limbaje" value="Altele" />
+        <label for="limba">Altele </label><input type="text" />
+      </div>
+    </form>
+
+    <br />
+
+    <div>
+      Ați mai lucrat în domeniul IT?:
+      <br />
+      <input type="radio" id="domeniu" name="domeniu" value="nu" />
+      <label for="domeniu">Nu</label><br />
+      <input type="radio" id="domeniu" name="domeniu" value="da" />
+      <label for="domeniu">Dacă da, unde?</label><br />
+      <textarea name="descriere" id="descriere" cols="15" rows="3"></textarea>
+    </div>
+
+    <br />
+
+    <div>
+      <label for="points">În câte locuri ați lucrat pe domeniu?</label>
+      <input type="number" id="points" name="points" min="1" />
+    </div>
+
+    <br />
+
+    <div>
+      <label for="quantity"
+        >Cât de tare vă atrage domeniul IT pe o scara de la 1 la 5:</label
+      >
+      <input type="number" id="quantity" name="quantity" min="1" max="5" />
+    </div>
+
+    <br />
+
+    <div>
+      Atașați un proiect realizat în limbajul de programare cunoscut de
+      dumneavoastră.<br />
+      <label for="myfile">Atașați aici:</label>
+      <input type="file" id="myfile" name="myfile" />
+    </div>
+
+    <br />
+
+    <div>
+      <label for="descriere"
+        >Competenţe personale (cunoştinţe, abilităţi, aptitudini):</label
+      >
+      <textarea name="descriere" id="descriere" cols="20" rows="3"></textarea>
+    </div>
+
+    <br />
+
+    <div>
+      Ce așteptări aveți de la un job în domeniul IT?<br />
+      <textarea
+        name="descriere"
+        id="descriere"
+        cols="30"
+        rows="5"
+        placeholder="Scrie-ți aici"
+      ></textarea>
+    </div>
+
+    <br />
+
+    <div>
+      <input
+        type="button"
+        onclick="alert('Felicitări, ați completat cu succes formularul')"
+        value="Verificare formular!"
+      />
+    </div>
+
+    <br />
+
+    <div>
+      <input type="submit" value="Trimite" />
+      <input type="reset" value="Resetare" />
+    </div>
+  </body>
+</html>
